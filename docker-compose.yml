@@ -1,0 +1,13 @@
+version: '2'
+services: 
+    nginx-server:
+         image: nginx
+         container_name: nginx
+         ports:
+           - 8080:80
+    tomcat:
+      image: tomcat-trial
+      container_name: tomcat9
+      ports: 
+        - 8081:8080
+
